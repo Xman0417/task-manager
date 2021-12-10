@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Tasks from './Tasks'
+
 function App() {
+  //Majority of code is in Tasks.js, this was built off of the original demo that we did in HSE Apps
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{textAlign: "center"}}>Task Manager</h1>
+      <Tasks />
+      
     </div>
   );
 }
